@@ -8,7 +8,15 @@ then
 
 fi
 
-# Check if docker-compose is installed
+# Check if Docker is installed
+if ! command -v docker &> /dev/null
+then
+    echo "Docker is not installed. Installing..."
+    brew install docker
+
+fi
+
+# Check if Docker compose is installed
 if ! command -v docker-compose &> /dev/null
 then
     echo "Docker compose is not installed. Installing..."
@@ -16,7 +24,7 @@ then
 
 fi
 
-# start colima
+# Start Colima
 colima start --cpu 4 --memory 4 --disk 60
 
 # Set environment variables
