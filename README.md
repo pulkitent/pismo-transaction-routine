@@ -105,7 +105,7 @@ curl --location 'localhost:8080/api/v1/accounts' \
 
 ## Things I could have covered if given more time (or more complex business logic)
 
-* I could have used clean architecture concept to structure my project
+* I could have used concept of clean architecture by Uncle Bob (Robert C Martin) to structure my project
 * I could have added ci-cd.yml to set up the CI/CD pipeline in the GitHub flow
 * I could have implemented notification pattern as suggested by Martin Fowler by not throwing
   exceptions [ref-link](https://martinfowler.com/articles/replaceThrowWithNotification.html)
