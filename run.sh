@@ -5,9 +5,10 @@ if ! command -v colima &> /dev/null
 then
     echo "Colima is not installed. Installing..."
     brew install colima
-    colima start --cpu 4 --memory 4 --disk 60
 
 fi
+
+colima start --cpu 4 --memory 4 --disk 60
 
 # Set environment variables
 export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
