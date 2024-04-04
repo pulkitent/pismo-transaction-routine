@@ -20,12 +20,12 @@ respective account.
 1. Run `chmod +x run.sh` to provide execute permission
 2. Run `./run.sh` to run the service
 
-### API documentation (Swagger)
+## API documentation (Swagger)
 
 1. Start the service using the above steps
 2. Open `http://localhost:8080/swagger-ui/index.html` in your browser
 
-### Setting up your local environment for development
+## Setting up your local environment for development
 
 1. Install Java 11
 2. Install Gradle 7
@@ -36,7 +36,7 @@ respective account.
 6. Run `./gradlew clean bootRun -Dspring.profiles.active=dev` to start the service (make sure Postgres service is running)
 7. Run `./gradlew clean bootJar` to create a fat JAR
 
-### IntelliJ setup
+## IntelliJ setup
 
 1. Add Lombok plugin (Preferences > Plugins > Search for Lombok)
 2. Enable annotation processing (Preferences > Build, Execution, Deployment > Compiler > Annotation Processors)
