@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS accounts(
+    id SERIAL PRIMARY KEY,
+    document_number VARCHAR(11) NOT NULL
+);

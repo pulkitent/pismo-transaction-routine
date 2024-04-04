@@ -1,0 +1,8 @@
+BEGIN;
+
+DELETE FROM accounts;
+
+INSERT INTO accounts(id, document_number)
+VALUES (999999998, '12345678900'),(999999999, '12345678901');
+
+COMMIT;
