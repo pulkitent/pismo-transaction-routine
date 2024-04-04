@@ -1,28 +1,28 @@
 # transaction-routine
 
-This service purpose is to manage transaction for each operation done one by the customer & associate it their
+This service purpose is to manage transactions for each operation done by the customer & associate it with their
 respective account.
 
-## Built With
+## Built with
 
 * Java 17 - The programming language used
 * Spring Boot 3.2.4 - The web framework used
-* PostgreSQL - The SQL based database (transaction_routine)
+* PostgreSQL - The SQL-based database (transaction_routine)
 * Lombok - Lombok is used to reduce boilerplate code for model/data objects,
 * Gradle - Dependency & build management
-* Spring doc openapi - API Documentation (spring-boot and swagger-ui)
+* Spring doc open API - API Documentation (spring-boot and swagger-ui)
 * Docker (Colima) - Containerize the application
 * Flyway - For database migrations
 * Jacoco - For generating test reports
 
-## Steps to run the application on local
+## Steps to run the application on a local
 
 1. Run `chmod +x run.sh` to provide execute permission
 2. Run `./run.sh` to run the service
 
 ### API documentation (Swagger)
 
-1. Start the service using above steps
+1. Start the service using the above steps
 2. Open `http://localhost:8080/swagger-ui/index.html` in your browser
 
 ### Setting up your local environment for development
@@ -33,12 +33,12 @@ respective account.
 4. Run `./gradlew clean integrationTest` to run the integration tests (Check setup steps in `Integration test setup`
    below)
 4. Run `./gradlew clean build` to build the service
-6. Run `./gradlew clean bootRun -Dspring.profiles.active=dev` to start service (make sure postgres service is running)
-7. Run `./gradlew clean bootJar` to create fat JAR
+6. Run `./gradlew clean bootRun -Dspring.profiles.active=dev` to start the service (make sure Postgres service is running)
+7. Run `./gradlew clean bootJar` to create a fat JAR
 
-### IntelliJ Setup
+### IntelliJ setup
 
-1. Add lombok plugin (Preferences > Plugins > Search for Lombok)
+1. Add Lombok plugin (Preferences > Plugins > Search for Lombok)
 2. Enable annotation processing (Preferences > Build, Execution, Deployment > Compiler > Annotation Processors)
 
 ## Integration test setup
