@@ -9,24 +9,24 @@ import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
-class NegativeAmountTransactionTypeValidationTest {
+class PositiveAmountTransactionTypeValidationUnitTest {
 
     @InjectMocks
-    private NegativeAmountTransactionTypeValidation negativeAmountTransactionTypeValidation;
+    private PositiveAmountTransactionTypeValidation positiveAmountTransactionTypeValidation;
 
     @Test
-    void validate_shouldThrowException_whenAmountIsPositiveAndDescriptionIsPurchaseType() {
+    void validate_shouldThrowException_whenAmountIsNegativeAndDescriptionIsCreditType() {
 
         Assertions.assertThrows(FailedValidationException.class,
-                () -> negativeAmountTransactionTypeValidation.validate("Normal Purchase", new BigDecimal("23.5")));
+                () -> positiveAmountTransactionTypeValidation.validate("Credit Voucher", new BigDecimal("-23.5")));
 
     }
 
     @Test
-    void validate_shouldNotThrowException_whenAmountIsNegativeAndDescriptionIsPurchaseType() {
+    void validate_shouldNotThrowException_whenAmountIsNegativeAndDescriptionIsCreditType() {
 
         Assertions.assertDoesNotThrow(
-                () -> negativeAmountTransactionTypeValidation.validate("Normal Purchase", new BigDecimal("-23.5")));
+                () -> positiveAmountTransactionTypeValidation.validate("Credit Voucher", new BigDecimal("23.5")));
 
     }
 }
