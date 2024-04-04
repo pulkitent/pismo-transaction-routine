@@ -18,7 +18,7 @@ respective account.
 ## Steps to run the application on a local
 
 1. Run `chmod +x run.sh` to provide execute permission
-2. Run `./run.sh` to run the service
+2. Run `./run.sh` to run the service (assuming the `brew` package manager is already installed)
 
 ## API documentation (Swagger)
 
