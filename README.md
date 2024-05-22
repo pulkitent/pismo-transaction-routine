@@ -1,4 +1,4 @@
-# transaction-routine
+# pismo-transaction-routine
 
 This service purpose is to manage transactions for each operation done by the customer & associate it with their
 respective account.
